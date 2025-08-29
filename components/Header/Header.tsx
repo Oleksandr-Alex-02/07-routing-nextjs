@@ -16,8 +16,8 @@ export default function Header() {
                         <Link href="/">Home</Link>
                     </li>
                     <li>
-                        {/* <Link href="/notes">Notes</Link> */}
-                        <TagsMenu />
+                        <Link href="/notes">Notes</Link>
+                        {/* <TagsMenu /> */}
                     </li>
                 </ul>
             </nav>

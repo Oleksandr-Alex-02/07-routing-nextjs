@@ -9,7 +9,6 @@ import { createNote } from '@/lib/api'
 import { NoteFormType } from '@/types/notes';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 
-
 const validationForm = Yup.object().shape({
     title: Yup.string()
         .min(3, "Title must be at least 3 characters")
