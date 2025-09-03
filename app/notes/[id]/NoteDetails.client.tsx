@@ -4,7 +4,7 @@ import css from './NoteDetails.module.css';
 import { useParams, useRouter } from 'next/navigation';
 import { useQuery, keepPreviousData } from '@tanstack/react-query';
 import { getIdNotes } from '@/lib/api';
-import { Note } from '@/types/notes'
+import { Note } from '@/types/note'
 
 export default function NoteDetailsClient() {
     const { id } = useParams<{ id: string }>()

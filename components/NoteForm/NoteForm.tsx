@@ -6,7 +6,7 @@ import { useId } from 'react';
 import { Formik, Form, Field, FormikHelpers, ErrorMessage } from 'formik';
 
 import { createNote } from '@/lib/api'
-import { NoteFormType } from '@/types/notes';
+import { NoteFormType } from '@/types/note';
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 
 const validationForm = Yup.object().shape({

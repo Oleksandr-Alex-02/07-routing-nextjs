@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import { useMutation, useQueryClient } from '@tanstack/react-query';
 import { deleteNote } from '@/lib/api';
-import { Note } from '@/types/notes';
+import { Note } from '@/types/note';
 
 type NoteListProps = {
     notes: Note[];

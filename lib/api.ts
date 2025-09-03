@@ -1,6 +1,6 @@
 
 import axios from 'axios';
-import { Note, NoteFormType } from "../types/notes"
+import { Note, NoteFormType } from "../types/note"
 
 export interface NoteData {
     notes: Note[];
