@@ -1,5 +1,5 @@
 
-import css from './page.module.css'
+import css from './SidebarNotes.module.css'
 
 export const categories = [
     "All",
