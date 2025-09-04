@@ -37,9 +37,9 @@ export default function NoteDetailsClient() {
                 <div className={css.modal}>
                     <button onClick={close}>Close</button>
                 </div>
-                {data?.createdat && (
+                {data?.createdAt && (
                     <p className={css.date}>
-                        {new Date(data.createdat).toLocaleString('uk-UA')}
+                        {new Date(data.createdAt).toLocaleString('uk-UA')}
                     </p>
                 )}
             </div>
