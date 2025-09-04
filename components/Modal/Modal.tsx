@@ -13,7 +13,7 @@ export default function Modal({ onClose, children }: ModalProps) {
 
     useEffect(() => {
         const handleEsc = (e: KeyboardEvent) => {
-            if (e.code === 'Escepe') onClose();
+            if (e.code === 'Escape') onClose();
         };
         window.addEventListener('keydown', handleEsc);
         return () => { window.removeEventListener('keydown', handleEsc) }
@@ -24,7 +24,7 @@ export default function Modal({ onClose, children }: ModalProps) {
         return () => {
             document.body.style.overflow = 'auto'
         }
-    })
+    }, [])
 
     const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
         if (e.target === e.currentTarget) onClose();

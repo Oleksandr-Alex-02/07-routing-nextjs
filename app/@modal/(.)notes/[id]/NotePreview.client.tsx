@@ -8,11 +8,7 @@ import { Note } from '@/types/note'
 import Modal from '@/components/Modal/Modal';
 import NotePreviewClient from '@/components/NotePreview/NotePreview';
 
-type Props = {
-    onClose: () => void;
-};
-
-export default function NotePreview({ onClose }: Props) {
+export default function NotePreview() {
     const { id } = useParams<{ id: string }>();
     const router = useRouter();
 
@@ -33,7 +29,7 @@ export default function NotePreview({ onClose }: Props) {
     const close = () => router.back();
 
     return (
-        <Modal onClose={onClose}>
+        <Modal onClose={close}>
             <NotePreviewClient note={note} onClose={close} />
         </Modal>
     );

@@ -4,11 +4,11 @@ import { dehydrate, HydrationBoundary, QueryClient } from '@tanstack/react-query
 import NotePreviewClient from './NotePreview.client';
 
 type Props = {
-    onClose: () => void;
+    // onClose: () => void;
     params: Promise<{ id: string }>;
 };
 
-export default async function NotePreview({ params, onClose }: Props) {
+export default async function NotePreview({ params, }: Props) {
     const queryClient = new QueryClient()
     const { id } = await params;
 
@@ -19,7 +19,7 @@ export default async function NotePreview({ params, onClose }: Props) {
 
     return (
         <HydrationBoundary state={dehydrate(queryClient)}>
-            <NotePreviewClient onClose={onClose} />
+            <NotePreviewClient />
         </HydrationBoundary>
     );
 };
