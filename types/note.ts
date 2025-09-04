@@ -3,8 +3,8 @@ export interface Note {
     tag: string,
     title: string,
     content: string,
-    createdat: string,
-    updatedat: string,
+    createdAt: string,
+    updatedAt: string,
 }
 
 export interface NoteFormType {
