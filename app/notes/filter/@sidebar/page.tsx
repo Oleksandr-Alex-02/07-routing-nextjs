@@ -13,7 +13,6 @@ export const categories = [
 export default function Sidebar() {
     return (
         <ul className={css.menuList}>
-            {/* список тегів */}
             {categories.map((tag) =>
                 <li key={tag} className={css.menuItem}>
                     <a href={`/notes/filter/${tag}`} className={css.menuLink}>

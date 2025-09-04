@@ -17,7 +17,7 @@ export default function NotePreview({ onClose }: Props) {
     const router = useRouter();
 
     const { data: note, error, isLoading } = useQuery<Note>({
-        queryKey: ["notes", { id }],
+        queryKey: ["note", { id }],
         queryFn: () => getIdNotes(id),
         refetchOnMount: false,
     })

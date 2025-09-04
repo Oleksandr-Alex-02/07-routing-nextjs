@@ -11,7 +11,7 @@ export default function NoteDetailsClient() {
     const router = useRouter();
 
     const { data, isLoading, error } = useQuery<Note>({
-        queryKey: ["notes", { id }],
+        queryKey: ["note", { id }],
         queryFn: () => getIdNotes(id),
         placeholderData: keepPreviousData,
         refetchOnMount: false,
